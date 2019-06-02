@@ -43,7 +43,7 @@ public:
 	void Mood_Up(void);
 	void Mood_Down(void);
 	void Update_Mood_Description(void);
-	void Complain(std::string str, int times);
+	void Complain(std::string str, int times = 1);
 	void List(void);
 };
 
