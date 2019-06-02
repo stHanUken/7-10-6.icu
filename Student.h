@@ -11,9 +11,11 @@ enum Grade {
 	PRIMARY, JUNIOR, SENIOR
 };
 
-enum Mood {
-	EXCITED, HAPPY, MODERATE, NERVOUS, LOW, SAD, MAD, CRAZY
-};
+typedef struct {
+	int value;
+	std::string description;
+//	Excited, Happy, Moderate, Nervous, Sad, Mad, Crazy
+} Mood;
 
 typedef struct {
 	int year;
@@ -23,16 +25,26 @@ typedef struct {
 
 class Student {
 private:
+	std::string Name;
 	enum Gender Sex;
 	Date Birthday;
 	unsigned int Age;
 	enum Grade Level;
-	int Study_Hours;
-	enum Mood Now_Mood;
+	double Study_Hours;
+	double Relax_Hours;
+	double R_S_RATE;
+	Mood Now_Mood;
 public:
-	Student(enum Gender gender, Date day, unsigned int age, enum Grade level);
-	void Study(int hours);
-	void Complain(string str, int times);
+	Student(std::string name, enum Gender gender, Date date, unsigned int age, enum Grade level, double rate);
+	void Study(double hours);
+	void Relax(double hours);
+	Mood Check_Mood(void);
+	void Mood_Change(void);
+	void Mood_Up(void);
+	void Mood_Down(void);
+	void Update_Mood_Description(void);
+	void Complain(std::string str, int times);
+	void List(void);
 };
 
 #endif
