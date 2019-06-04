@@ -4,11 +4,11 @@
 #define __STUDENT_H__
 
 enum Gender {
-	MALE, FEMALE
+    MALE, FEMALE
 };
 
 enum Grade {
-	PRIMARY, JUNIOR, SENIOR
+    PRIMARY, JUNIOR, SENIOR
 };
 
 typedef struct {
@@ -35,7 +35,7 @@ private:
 	double R_S_RATE;
 	Mood Now_Mood;
 public:
-	Student(std::string name, enum Gender gender, Date date, unsigned int age, enum Grade level, double rate);
+	void init(std::string name, enum Gender gender, Date date, unsigned int age, enum Grade level, double rate);
 	void Study(double hours);
 	void Relax(double hours);
 	Mood Check_Mood(void);
