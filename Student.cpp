@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Student.h"
 
-Student::Student(std::string name, enum Gender gender, Date date, unsigned int age, enum Grade level, double rate)
+void Student::init(std::string name, enum Gender gender, Date date, unsigned int age, enum Grade level, double rate)
 {
 	Name = name;
 	Sex = gender;
@@ -94,8 +94,7 @@ void Student::List(void)
 	std::cout << "----------\t\t\t\t----------" << std::endl;
 	std::cout << "Name\t\t\t\t\t" << Name << std::endl;
 	std::cout << "Gender\t\t\t\t\t";
-	switch ( Sex )
-	{
+	switch ( Sex ) {
 		case MALE:
 			std::cout << "Male" << std::endl;
 			break;
