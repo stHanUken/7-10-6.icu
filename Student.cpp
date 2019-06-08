@@ -1,13 +1,13 @@
 #include <iostream>
 #include "Student.h"
 
-void Student::init(std::string name, enum Gender gender, Date date, unsigned int age, enum Grade level, double rate)
+void Student::init(std::string name, enum Gender gender, int y, int m, int d, unsigned int age, enum Grade level, double rate)
 {
 	Name = name;
 	Sex = gender;
-	Birthday.year = date.year;
-	Birthday.month = date.month;
-	Birthday.day = date.day;
+	Birthday.year = y;
+	Birthday.month = m;
+	Birthday.day = d;
 	Age = age;
 	Level = level;
 	Study_Hours = 0;
@@ -38,7 +38,7 @@ Mood Student::Check_Mood(void)
 
 void Student::Mood_Change(void)
 {
-	if ( Relax_Hours / Study_Hours < R_S_RATE )
+	if ( this -> Relax_Hours / this -> Study_Hours < this -> R_S_RATE )
 		Mood_Down();
 	else
 		Mood_Up();
@@ -84,14 +84,12 @@ void Student::Update_Mood_Description(void)
 
 void Student::Complain(std::string str, int times)
 {
-	for ( int i = 0; i < times; i ++)
+	for ( int i = 0; i < times; i ++ )
 		std::cout << Name << ": \'" << str << "\'" << std::endl;
 }
 
 void Student::List(void)
 {
-	std::cout << "Properties\t\t\t\tValue" << std::endl;
-	std::cout << "----------\t\t\t\t----------" << std::endl;
 	std::cout << "Name\t\t\t\t\t" << Name << std::endl;
 	std::cout << "Gender\t\t\t\t\t";
 	switch ( Sex ) {
@@ -119,3 +117,9 @@ void Student::List(void)
 	std::cout << "Total Relaxing Hours\t\t\t" << Relax_Hours << std::endl;
 	std::cout << "Mood\t\t\t\t\t" << Now_Mood.description << std::endl;
 }
+
+std::string Student::Get_Name(void)
+{
+	return Name;
+}
+
