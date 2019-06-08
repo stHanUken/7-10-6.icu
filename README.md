@@ -1,6 +1,7 @@
 # 7-10-6.icu
 ## Introduction
 To complain about studying stress and pressure in China's middle school, I created this repository.
+It is just a way for me to get less stressed, don't take it seriously in the way of \"996.icu\".
 I wish to resist the amount of homework, hoping as many as possible people to see it.
 As a student, I can't update very quickly.
 ## What is it
