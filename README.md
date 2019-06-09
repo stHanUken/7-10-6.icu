@@ -6,6 +6,8 @@ I wish to resist the amount of homework, hoping as many as possible people to se
 ~~As a student, I can't update very quickly.~~
 ## What is 7-10-6?
 Just like so-called \"996\", 7-10-6 means studying from 7 a.m. to 10 p.m., from Monday to Saturday.
+Though we have the strongest bodies, we still cannot survive a long-term super stressful studying period.
+Study by 7-10-6, sick in ICU.
 ## Why 7-10-6?
 Schools especially in developing districts have far more stress on entering a higher school.
 As a result, school leaders and teachers push us hard to get into a good higher school.
