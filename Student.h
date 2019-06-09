@@ -1,3 +1,6 @@
+// THIS FILE IS TO BE DELETED
+
+
 #include "Settings.h"
 
 #ifndef __STUDENT_H__
