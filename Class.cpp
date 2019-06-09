@@ -1,3 +1,6 @@
+// THIS FILE IS TO BE DELETED
+
+
 #include <iostream>
 #include "Class.h"
 
