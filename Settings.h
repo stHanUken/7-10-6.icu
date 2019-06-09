@@ -1,3 +1,6 @@
+// THIS FILE IS TO BE DELETED
+
+
 #include <string>
 
 #ifndef __SETTINGS_H__
