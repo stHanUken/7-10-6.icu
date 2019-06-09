@@ -1,3 +1,6 @@
+// THIS FILE IS TO BE DELETED
+
+
 #include "Settings.h"
 #include "Student.h"
 
