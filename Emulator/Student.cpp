@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Student.h"
+#include "Settings.h"
+#include "Debug.h"
 
 void Student::init(std::string name, enum Gender gender, int y, int m, int d, unsigned int age, enum Grade level, double rate)
 {
@@ -15,19 +17,25 @@ void Student::init(std::string name, enum Gender gender, int y, int m, int d, un
 	Now_Mood.value = 2;
 	R_S_RATE = rate;
 	Update_Mood_Description();
+	Belonged_Class = NULL;
+	Belonged_School = NULL;
+	if ( Debug == true )
+		std::cout << "Event: Successfully created a data for a student." << std::endl;
 }
 
 void Student::Study(double hours)
 {
 	Study_Hours += hours;
-	std::cout << "Study for " << hours << " hours." << std::endl;
+	if ( Debug == true )
+		std::cout << "Event: Study for " << hours << " hours." << std::endl;
 	Mood_Change();
 }
 
 void Student::Relax(double hours)
 {
 	Relax_Hours += hours;
-	std::cout << "Relax for " << hours << " hours." << std::endl;
+	if ( Debug == true )
+		std::cout << "Event: Relax for " << hours << " hours." << std::endl;
 	Mood_Change();
 }
 
@@ -90,6 +98,7 @@ void Student::Complain(std::string str, int times)
 
 void Student::List(void)
 {
+	std::cout << std::endl;
 	std::cout << "Name\t\t\t\t\t" << Name << std::endl;
 	std::cout << "Gender\t\t\t\t\t";
 	switch ( Sex ) {
@@ -116,9 +125,11 @@ void Student::List(void)
 	std::cout << "Total Studying Hours\t\t\t" << Study_Hours << std::endl;
 	std::cout << "Total Relaxing Hours\t\t\t" << Relax_Hours << std::endl;
 	std::cout << "Mood\t\t\t\t\t" << Now_Mood.description << std::endl;
+	std::cout << std::endl;
 }
 
 std::string Student::Get_Name(void)
 {
 	return Name;
 }
+

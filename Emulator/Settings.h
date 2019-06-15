@@ -3,6 +3,9 @@
 #ifndef __SETTINGS_H__
 #define __SETTINGS_H__
 
+#define MAX_STUDENT_NUMBER 100
+#define MAX_CLASS_NUMBER 100
+
 enum Gender {
     MALE, FEMALE
 };
@@ -24,3 +27,4 @@ typedef struct {
 } Date;
 
 #endif
+
