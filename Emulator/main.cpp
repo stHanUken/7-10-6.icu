@@ -1,9 +1,12 @@
 #include <iostream>
+#include "Settings.h"
 #include "Student.h"
 #include "Class.h"
+#include "School.h"
 
 int main()
 {
-	/* Edit your demo here */
+
 	return 0;
 }
+

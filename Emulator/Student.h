@@ -14,6 +14,8 @@ private:
 	double Relax_Hours;
 	double R_S_RATE;
 	Mood Now_Mood;
+	class Class* Belonged_Class;
+	class School* Belonged_School;
 public:
 	void init(std::string name, enum Gender gender, int y, int m, int d, unsigned int age, enum Grade level, double rate);
 	void Study(double hours);
@@ -27,6 +29,8 @@ public:
 	void List(void);
 	std::string Get_Name(void);
 	friend class Class;
+	friend class School;
 };
 
 #endif
+
