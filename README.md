@@ -11,7 +11,7 @@ Schools especially in developing districts have far more stress on entering a hi
 As a result, school leaders and teachers push us hard to get into a good higher school.
 However, we top students cannot bear the stress along with much homework, so we are against it.
 ## What the repository is?
-This repository is a school-managing emulator. You can add some useful features to it.
+This repository is a school-managing simulator. You can add some useful features to it.
 ## Join us
 If you want to communicate with me, please send an e-mail to 1416759930@qq.com.
 I wish more and more China's high school students can join us.
