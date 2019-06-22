@@ -1,12 +1,7 @@
-#include <iostream>
-#include "Settings.h"
-#include "Student.h"
-#include "Class.h"
-#include "School.h"
+int Echo();
 
 int main()
 {
-
-	return 0;
+	return Echo();
 }
 

@@ -92,8 +92,12 @@ void Student::Update_Mood_Description(void)
 
 void Student::Complain(std::string str, int times)
 {
-	for ( int i = 0; i < times; i ++ )
-		std::cout << Name << ": \'" << str << "\'" << std::endl;
+	if ( ComplainWords == true )
+		for ( int i = 0; i < times; i ++ )
+			std::cout << Name << ": \'" << str << "\'" << std::endl;
+	else
+		if ( Debug == true )
+			std::cout << "WARNING: COMPLAIN SYSTEM IS CLOSED." << std::endl;
 }
 
 void Student::List(void)
